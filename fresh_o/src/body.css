@@ -1,0 +1,402 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
+
+@import '~@glidejs/glide/dist/css/glide.core.min.css';
+
+@import '~@glidejs/glide/dist/css/glide.theme.min.css';
+
+
+
+.top-selling-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center;
+    margin: 0 5rem;
+    height: 100%;
+}
+
+.categories{
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center;
+    width: 40%;
+    height: 60%;
+    
+}
+
+.section-title{
+    font-size: 1.5rem;
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 800;
+    color: #d01a0d;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 2rem;
+    width: 100%;
+}
+
+
+
+.section-carousel{
+    flex: 0 0 auto;
+    width: 90%; /* Glide will size each slide */
+    min-width: 250px; /* optional cap so it doesn’t grow too big */
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    /* position: relative; */
+    border-radius: 30px;
+
+}
+
+.glide__slides{
+    height: 53vh;
+}
+
+.carousel-track {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: max-content;
+}
+
+.carousel-item{
+    /* width: 19vw; */
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem;
+    transition: transform 0.5s ease-in-out;
+    /* background: #2c3e50; */
+    border-radius: 20%;
+    box-shadow: 0 4px 12px rgba(29, 13, 13, 0.669);
+
+}
+
+.carousel-item p{
+    margin: 0;
+}
+
+/* .carousel-item img{
+    width: 70%;
+    height: 50%;
+    border-radius: 20%;
+    border: 2px solid #ec9533;
+} */
+.carousel-item:hover {
+    transform: translateY(-5px);
+}
+
+.product-details {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    text-align: left;
+    padding: 0.5rem;
+    width: 70%;
+}
+
+
+
+/* Product name */
+.product-name-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center; 
+    width: 100%;
+}
+.product-name {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #1c1c1c;
+    margin: 0.7rem 0 0.25rem;
+}
+
+.product-local-name {
+    font-size: 0.9rem;
+    font-weight: 400;
+    /* color: ; */
+    margin: 0.25rem 0 0.5rem;
+}
+
+/* Product price */
+.product-price {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #d01a0d;
+    margin: 0.5rem;
+}
+
+.image-wrapper {
+    position: relative;
+    width: 100%;
+    height: 25vh;
+    border-radius: 20%;
+    overflow: hidden;
+}
+
+.carousel-image {
+    width: 70%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20%;
+}
+
+/* Reuse same class for both statuses */
+.stock-badge {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    padding: 0.3rem 0.6rem;
+    font-size: 0.75rem;
+    font-weight: bold;
+    border-radius: 0.5rem;
+    z-index: 2;
+    color: white;
+}
+
+/* In stock = green badge */
+.in-stock {
+    background-color: #2e7d32;
+}
+
+/* Out of stock = red badge */
+.out-of-stock {
+    background-color: #d01a0d;
+}
+
+
+/* Add to Cart Button */
+.add-to-cart-btn {
+    margin-top: 0.75rem;
+    background-color: #ec9533;
+    color: white;
+    padding: 0.5rem 0.9rem;
+    border: none;
+    border-radius: 0.5rem;
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 50%;
+}
+
+.add-to-cart-btn:hover {
+    background-color: #d01a0d;
+}
+
+.add-to-cart-btn:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+
+.masonry-grid {
+    column-count: 3;
+    column-gap: 15px;
+    width: 100%;
+    
+}
+
+.category-card {
+/* display: inline-block;
+width: 60%; */
+margin: 0 0 15px;
+border-radius: 20px;
+padding: 1rem;
+box-sizing: border-box;
+color: white;
+font-weight: 600;
+position: relative;
+cursor: pointer;
+transition: transform 0.3s ease;
+break-inside: avoid;
+}
+
+.category-card:hover {
+transform: scale(1.03);
+}
+
+.category-icon {
+width: 50px;
+height: 50px;
+position: absolute;
+top: 15px;
+right: 15px;
+object-fit: contain;
+opacity: 0.9;
+}
+
+.category-name {
+font-size: 1.2rem;
+margin-top: 60px;
+}
+
+/* Different sizes */
+.category-card.small {
+height: 12vh;
+}
+.category-card.medium {
+height: 17vh;
+}
+.category-card.large {
+height: 20vh;
+}
+
+
+
+.section2{
+    display: flex;
+    flex-direction: row;
+    align-items: center; 
+    justify-content: space-between;
+    margin: 0 5rem;
+
+}
+
+.pick-of-the-month-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center;
+    width: 55%;
+    height: 60%;
+    background-color: #1c1c1c;
+    border-radius: 30px;
+}
+
+.pick-of-the-month-section .section-title{
+    text-align: center;
+    color: #fcf6da;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.section-content{
+    display: flex;
+    flex-direction: row;
+    align-items: center; 
+    justify-content: space-evenly;
+    width: 100%;
+    height: 100%;
+}
+.section-img{
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    
+    
+}
+
+.section-img p{
+    font-size: 3rem;
+    font-weight: 900;
+    color: #fcf6da;
+    margin: 1rem;
+   
+}
+
+.top-pick-image{
+    width: 13vw;
+    height: 26vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: #ec9533 4px solid;
+}
+
+.section-recipe{
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    color: #fcf6da;
+    text-align: center;
+    margin-right: 4rem;
+
+    font-family: 'Roboto', sans-serif;
+}
+
+.section-recipe p{
+    font-size: 1.5rem;
+    font-weight: 900;
+    color: #d01a0d;
+    margin:0;
+   
+}
+
+.section-recipe h5{
+    font-size: 1rem;
+    font-weight: 900;
+    color: #ec9533;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+   
+}
+
+.section-recipe ul {
+    list-style-type: none;
+    padding-left: 1.5rem;
+    margin-bottom: 1rem;
+    text-align: left;
+    font-size: 0.7rem;
+    color: #fcf6da;
+    line-height: 1.5;
+    flex-wrap: wrap;
+   
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.section-recipe ul li {
+    margin-bottom: 0.2rem;
+    background-color: #fcf6da;
+    color: #1c1c1c;
+    font-weight: 700;
+    padding: 0.3rem;
+    border-radius: 5px;
+    width: auto;
+    display: inline-block;
+    margin: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+}
+
+/* Steps Section */
+.section-recipe ol {
+    list-style-type: decimal;
+    padding-left: 1.5rem;
+    margin-top: 1rem;
+    text-align: left;
+    font-size: 1rem;
+    color: #fcf6da;
+    line-height: 1.5;
+}
+
+.section-recipe ol li {
+    margin-bottom: 0.5rem;
+}
+
+
+.section-img .add-to-cart-btn{
+    width: 30%;
+    margin-top: 1rem;
+}
