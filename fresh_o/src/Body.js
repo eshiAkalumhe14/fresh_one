@@ -13,6 +13,14 @@ import vegetables from './images/frozen-food.png';
 import bulk from './images/bulk.png';
 import combo from './images/combine.png';
 
+import fresh from './images/fresh.png';
+import delivery from './images/express-delivery.png';
+import quality from './images/purchase-order.png';
+import map from './images/map.png';
+import butcher from './images/butcher.png';
+
+import s3img from './images/s3_img.png';
+
 
 
 import Glide from '@glidejs/glide';
@@ -133,52 +141,50 @@ function Body() {
     
     return(
         <div className="body_container">
-           <div className="top-selling-section" >
+            <div className="top-selling-section" >
                 <div className="section-title">
                     <h2>TOP SELLING ITEMS</h2>
                     
                 </div>
 
-         <div className="glide section-carousel">
-          <div className="glide__track" data-glide-el="track">
-            <ul className="glide__slides">
-              {products.map((product) => (
-                <li key={product.id} className="glide__slide carousel-item">
-                  <div className="image-wrapper">
-                    {!product.inStock && (
-                      <span className={`stock-badge ${product.inStock ? 'in-stock' : 'out-of-stock'}`}>
-                        {product.inStock ? 'In Stock' : 'Out of Stock'}
-                      </span>
-                    )}
-                    <img src={product.image} alt={product.name} className="carousel-image" />
-                  </div>
-                  <div className="product-details">
-                    <div className="product-name-container">
-                      <p className="product-name">{product.name}</p>
-                      <p className="product-local-name">{product.localName}</p>
-                    </div>
-                    <p className="product-price">{product.price}</p>
-                    <p className="product-delivery">{product.deliveryOption}</p>
-                  </div>
-                  <button className="add-to-cart-btn" disabled={!product.inStock}>
-                    Add to Cart
-                  </button>
-                </li>
-              ))}
-            </ul>
-          </div>
-        </div>
-
-        {/* <div className="glide__arrows" data-glide-el="controls">
-                        <button className="glide__arrow glide__arrow--left scroll-button" data-glide-dir="<">
-                            <img src={left} alt="left" />
+                <div className="glide section-carousel">
+                <div className="glide__track" data-glide-el="track">
+                    <ul className="glide__slides">
+                    {products.map((product) => (
+                        <li key={product.id} className="glide__slide carousel-item">
+                        <div className="image-wrapper">
+                            {!product.inStock && (
+                            <span className={`stock-badge ${product.inStock ? 'in-stock' : 'out-of-stock'}`}>
+                                {product.inStock ? 'In Stock' : 'Out of Stock'}
+                            </span>
+                            )}
+                            <img src={product.image} alt={product.name} className="carousel-image" />
+                        </div>
+                        <div className="product-details">
+                            <div className="product-name-container">
+                            <p className="product-name">{product.name}</p>
+                            <p className="product-local-name">{product.localName}</p>
+                            </div>
+                            <p className="product-price">{product.price}</p>
+                            <p className="product-delivery">{product.deliveryOption}</p>
+                        </div>
+                        <button className="add-to-cart-btn" disabled={!product.inStock}>
+                            Add to Cart
                         </button>
-                        <button className="glide__arrow glide__arrow--right scroll-button" data-glide-dir=">">
-                            <img src={right} alt="right" />
-                        </button>
-                        </div> */}
+                        </li>
+                    ))}
+                    </ul>
+                </div>
+                </div>
 
-
+                {/* <div className="glide__arrows" data-glide-el="controls">
+                                <button className="glide__arrow glide__arrow--left scroll-button" data-glide-dir="<">
+                                    <img src={left} alt="left" />
+                                </button>
+                                <button className="glide__arrow glide__arrow--right scroll-button" data-glide-dir=">">
+                                    <img src={right} alt="right" />
+                                </button>
+                                </div> */}
            </div>
 
 
@@ -245,6 +251,69 @@ function Body() {
                     </div>
                 </div>
 
+
+            </div>
+
+            <div className='section3'>
+                <div className="section-title">
+                    <h2>WHY FRESH ONE?</h2>
+                </div>
+
+                <div>
+                    <p className="section3-description">At Fresh One Frozen Foods, we go beyond selling frozen meats — we deliver a trusted experience, built around Nigerian taste, convenience, and quality. 
+                        Here’s what makes us truly different:
+                    </p>
+
+                </div>
+
+                <div className='section3-container'>
+                    <div className='section3-img'>
+                        <img src={s3img} alt="Delivery" className="section3-image" />
+                    </div>
+
+                    <div className='section3-content'>
+                        <div className="section3-card">
+                            <img src={fresh} alt="Fresh" className="section3-icon" />
+                            <h3>Taste of Home, Frozen Fresh</h3>
+                            <p>From Point-and-Kill catfish to shawa and smoked turkey, we bring Nigerian flavours straight to your freezer. Frozen at peak freshness to lock in taste and nutrients — enjoy that true homely taste every time.</p>
+                        </div>
+
+                        <div className="section3-card">
+                            <img src={delivery} alt="Delivery" className="section3-icon" />
+                            <h3>Same-Day or Next-Day Delivery</h3>
+                            <p>We deliver across Nigeria — fast and fresh. Choose Same-Day delivery in select cities or reliable Next-Day shipping nationwide. No more market runs; just doorstep convenience.</p>
+                        </div>
+
+                        <div className="section3-card">
+                            <img src={butcher} alt="Butcher" className="section3-icon" />
+                            <h3>Clean, Cut & Ready-to-Cook</h3>
+                            <p>All products are professionally cleaned, cut, and sealed — ready for your pot. Save time and skip the stress. Just thaw, season, and cook your favorite stew, soup, or suya.</p>
+                        </div>
+
+                        <div className="section3-card">
+                            <img src={map} alt="Map" className="section3-icon" />
+                            <h3>Proudly Nigerian & Community-Driven</h3>
+                            <p>We serve Nigerian families, students, caterers, and food vendors with pride. Our platform is made by Nigerians, for Nigerians — focused on quality, culture, and trust.</p>
+                        </div>
+
+                        <div className="section3-card">
+                            <img src={quality} alt="Quality" className="section3-icon" />
+                            <h3>Fair Prices & Bulk Deals</h3>
+                            <p>Get transparent pricing and combo packs that save you more. From small orders to party-sized bulk deliveries — we’ve got your table covered.</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                {/* <div>
+                    <h3>Fresh One Frozen Foods</h3>
+                    <p>Always Fresh. Always Reliable. Always Naija.</p>
+                </div> */}
+                <div>
+                    
+                </div>
+
+                <div></div>
 
             </div>
 

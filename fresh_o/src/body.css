@@ -14,6 +14,7 @@
     justify-content: center;
     margin: 0 5rem;
     height: 100%;
+    padding: 5vh;
 }
 
 .categories{
@@ -260,6 +261,8 @@ height: 20vh;
     justify-content: space-between;
     margin: 0 5rem;
 
+    padding-bottom: 10vh;
+
 }
 
 .pick-of-the-month-section{
@@ -399,4 +402,99 @@ height: 20vh;
 .section-img .add-to-cart-btn{
     width: 30%;
     margin-top: 1rem;
+}
+
+
+.section3-content {
+    display: flex;
+    flex-direction: column;
+    /* gap: 2rem; */
+    /* padding: 2rem 0; */
+}
+  
+.section3-card {
+    background-color: #fcf6da;
+    /* padding: 1.5rem; */
+    border-radius: 16px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease;
+    margin: 2rem;
+    text-align: left;
+}
+
+.section3-card:hover {
+    transform: translateY(-5px);
+}
+
+.section3-card h3 {
+    font-size: 1.3rem;
+    color: #ec9533;
+    margin: 0.1rem 2rem;
+    font-weight: 700;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+.section3-card p {
+    font-size: 0.95rem;
+    color: #2c3e50;
+    line-height: 1.5;
+    margin: 0.3rem 2rem;
+    font-weight: 700;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+
+.section3{
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: space-between;
+    padding: 0 5rem;
+    background-color: #ec9533;
+    /* text-align: left; */
+}
+
+.section3 .section-title{
+    /* text-align: left; */
+    color: #1c1c1c;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.section3-description{
+    color: #1c1c1c;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-weight: 600;
+    font-family: 'Roboto', sans-serif;
+}
+
+.section3-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center; 
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    
+}
+
+.section3-img img{
+    height: 90vh;
+    border-radius: 20px;
+    border: 2px solid #ec9533;
+}
+
+.section3-icon{
+    width: 50px;
+    height: 50px;
+    /* position: absolute; */
+    margin: 0.4rem 2rem;
+    /* object-fit: contain; */
+    opacity: 0.9;
 }
