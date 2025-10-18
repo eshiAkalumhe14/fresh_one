@@ -201,6 +201,10 @@ form{
 
 .nav li {
     margin: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 
 .nav a {
@@ -224,4 +228,331 @@ form{
     width: 25px;
     margin-bottom: 10px;
     vertical-align: middle;
+}
+
+
+/* RESPONSIVE DESIGN - Media Queries */
+
+/* Large Desktop (1200px and up) */
+@media screen and (min-width: 1200px) {
+    .header_container {
+        width: 90%;
+        height: 12vh;
+    }
+    
+    .header_title {
+        font-size: 1.1rem;
+    }
+    
+    .icon {
+        height: 45px;
+        width: 45px;
+    }
+    
+    .nav a {
+        font-size: 1.3rem;
+    }
+}
+
+/* Tablet styles (768px - 1024px) */
+@media screen and (max-width: 1024px) {
+    .App-header {
+        height: 16vh;
+    }
+    
+    .header_container {
+        width: 95%;
+        height: 10vh;
+        border-radius: 30px;
+    }
+    
+    .header_con1 {
+        width: 15%;
+    }
+    
+    .header_con2 {
+        width: 75%;
+    }
+    
+    .header_title {
+        font-size: 0.9rem;
+    }
+    
+    .icon {
+        height: 35px;
+        width: 35px;
+        margin: 0 15px;
+    }
+    
+    .cart_count {
+        font-size: 0.9rem;
+        width: 8vw;
+    }
+    
+    .search_input {
+        width: 25vh;
+        padding: 8px;
+        font-size: 0.9rem;
+    }
+    
+    .search_submit_button {
+        padding: 8px 15px;
+        font-size: 0.9rem;
+    }
+    
+    .menu_section {
+        width: 90%;
+        top: 12%;
+    }
+    
+    .nav a {
+        font-size: 1.1rem;
+        margin: 0 2rem 2rem 0;
+    }
+    
+    .nav li {
+        margin: 0 15px;
+    }
+    
+    .nav_icon {
+        height: 22px;
+        width: 22px;
+    }
+}
+
+/* Mobile styles (max-width: 768px) */
+@media screen and (max-width: 768px) {
+    .App-header {
+        height: 14vh;
+    }
+    
+    .header_container {
+        width: 95%;
+        height: 8vh;
+        border-radius: 20px;
+        top: 1%;
+    }
+    
+    .header_con1 {
+        width: 20%;
+    }
+    
+    .header_con2 {
+        width: 70%;
+    }
+    
+    .logo {
+        height: 50%;
+    }
+    
+    .header_title {
+        font-size: 0.8rem;
+    }
+    
+    .icon {
+        height: 30px;
+        width: 30px;
+        margin: 0 10px;
+    }
+    
+    .cart_count {
+        font-size: 0.8rem;
+        width: 12vw;
+    }
+    
+    .search_bar_container {
+        position: absolute;
+        top: 100%;
+        left: 010px;
+        width: 90%;
+        background-color: #ec9533;
+        border-radius: 0 0 20px 20px;
+        padding: 10px;
+        z-index: 998;
+    }
+    
+    .search_input {
+        width: 60vw;
+        padding: 8px;
+        font-size: 0.9rem;
+    }
+    
+    .search_submit_button {
+        padding: 8px 12px;
+        font-size: 0.9rem;
+    }
+    
+    .menu_section {
+        width: 85%;
+        top: 8%;
+        border-radius: 20px;
+    }
+    
+    .menu_open {
+        max-height: 12vh;
+    }
+    
+    .nav {
+        padding-top: 1rem;
+    }
+    
+    .nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .nav li {
+        margin: 0 10px;
+        flex-direction: row;
+        align-items: center;
+    }
+    
+    .nav a {
+        font-size: 0.9rem;
+        margin: 0 0.5rem 1rem 0;
+    }
+    
+    .nav_icon {
+        height: 18px;
+        width: 18px;
+        margin-bottom: 0;
+        margin-right: 5px;
+    }
+}
+
+/* Small mobile styles (max-width: 480px) */
+@media screen and (max-width: 480px) {
+    .App-header {
+        height: 12vh;
+    }
+    
+    .header_container {
+        width: 95%;
+        height: 7vh;
+        border-radius: 15px;
+    }
+    
+    .header_con1 {
+        width: 25%;
+    }
+    
+    .header_con2 {
+        width: 65%;
+    }
+    
+    .logo {
+        height: 45%;
+    }
+    
+    .header_title {
+        font-size: 0.7rem;
+    }
+    
+    .icon {
+        height: 25px;
+        width: 25px;
+        margin: 0 8px;
+    }
+    
+    .cart_count {
+        font-size: 0.7rem;
+        width: 15vw;
+    }
+    
+    .search_input {
+        width: 50vw;
+        padding: 6px;
+        font-size: 0.8rem;
+    }
+    
+    .search_submit_button {
+        padding: 6px 10px;
+        font-size: 0.8rem;
+    }
+    
+    .menu_section {
+        width: 85%;
+        top: 7%;
+    }
+    
+    .menu_open {
+        max-height: 10vh;
+    }
+    
+    .nav {
+        padding-top: 0.8rem;
+    
+    }
+    
+    .nav li {
+        margin: 0 5px;
+    }
+    
+    .nav a {
+        font-size: 0.8rem;
+        margin: 0 0.3rem 0.8rem 0;
+    }
+    
+    .nav_icon {
+        height: 16px;
+        width: 16px;
+        margin-right: 3px;
+    }
+    
+    /* Hide cart text on very small screens, show only icon */
+    .cart_count {
+        display: none;
+    }
+    
+    .cart_count_container {
+        flex-direction: column;
+    }
+    
+    /* Stack menu items more compactly */
+    .nav ul {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+    
+    .nav li {
+        flex-direction: column;
+        margin: 2px;
+    }
+}
+
+/* Extra small screens (max-width: 360px) */
+@media screen and (max-width: 360px) {
+    .header_container {
+        height: 6vh;
+    }
+    
+    .header_title {
+        font-size: 0.6rem;
+    }
+    
+    .icon {
+        height: 22px;
+        width: 22px;
+        margin: 0 5px;
+    }
+    
+    .search_input {
+        width: 45vw;
+        font-size: 0.7rem;
+    }
+    
+    .search_submit_button {
+        font-size: 0.7rem;
+        padding: 5px 8px;
+    }
+    
+    .nav a {
+        font-size: 0.7rem;
+    }
+    
+    .nav_icon {
+        height: 14px;
+        width: 14px;
+    }
 }
