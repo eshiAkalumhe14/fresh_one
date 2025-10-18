@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './header.css';
 import logo from './images/logo3.png'
 import search from  './images/search.png';
@@ -17,7 +17,22 @@ function Header (){
     const [searchTerm, setSearchTerm] = useState('');
 
     const [showMenu, setShowMenu] = useState(false);
+    const [isScrolled, setIsScrolled] = useState(false);
 
+    useEffect (() => {
+        const handleScroll = () => {
+            const scrollTop = window.scrollY;
+            if(scrollTop > 20)
+                setIsScrolled(true);
+            else
+                setIsScrolled(false);
+        };
+
+        window.addEventListener('scroll', handleScroll);
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
 
     const handleSearchToggle = () => {
         setShowSearchBar(!showSearchBar);
@@ -87,7 +102,7 @@ function Header (){
                 </div>
             </div>
                         {/* Sliding menu section */}
-                        <div className={`menu_section ${showMenu ? 'menu_open' : ''}`}>
+                        <div className={`menu_section ${showMenu ? 'menu_open' : ''}  ${isScrolled ? 'scrolled' : ''}`}>
                 <nav className="nav">
                     <ul>
                         <li>
