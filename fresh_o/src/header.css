@@ -183,7 +183,6 @@ form{
     width: 100%;
     z-index: 999;
     border-radius: 0px;
-
 }
 .menu_open {
     max-height: 9vh;
@@ -394,7 +393,7 @@ form{
     }
     
     .menu_section {
-        width: 85%;
+        width: 90%;
         top: 8%;
         border-radius: 20px;
     }
@@ -492,7 +491,7 @@ form{
     }
     
     .menu_section {
-        width: 85%;
+        width: 90%;
         top: 7%;
     }
     
