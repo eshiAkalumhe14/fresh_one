@@ -219,8 +219,12 @@ function Body() {
                     <div className ="section-content">
                         <div className ="section-img"> 
                             <img src={fish} alt="Fish" className="top-pick-image" />
-                            <p>FISH</p>
-                            <button className="add-to-cart-btn">Add to Cart</button>
+                            <div>
+                                <p>FISH</p>
+                                <button className="add-to-cart-btn">Add to Cart</button> 
+                            </div>
+                           
+                            
                         </div>
                         <div className="section-recipe"> 
                             

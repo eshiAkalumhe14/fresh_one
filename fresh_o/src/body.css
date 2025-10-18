@@ -693,13 +693,19 @@ height: 20vh;
         height: 15vh;
     }
 
+    .section-img{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+    }
     
     .section-img p {
         font-size: 1.5rem;
     }
     
     .section-img .add-to-cart-btn {
-        width: 50%;
+        width: 100%;
     }
     
     .section3 {
@@ -732,8 +738,8 @@ height: 20vh;
     }
 
     .pick-of-the-month-section .section-title{
-        font-size: 0.9rem;
-        margin: 10px;
+        font-size: 0.75rem;
+        margin: 0 20px;
     }
     
     .card-title{
@@ -807,15 +813,15 @@ height: 20vh;
     }
     
     .section3-card h3 {
-        font-size: 1rem;
+        font-size: .9rem;
     }
     
     .section3-card p {
-        font-size: 0.8rem;
+        font-size: 0.75rem;
     }
     
     .section3-img img {
-        height: 25vh;
+        height: 30vh;
     }
 
 }
