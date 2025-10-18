@@ -641,7 +641,7 @@ height: 20vh;
     .category-card.small,
     .category-card.medium,
     .category-card.large {
-        height: 15vh;
+        height: 17vh;
         width : 15vh;
         flex: 0 0 auto;
         display: flex;
