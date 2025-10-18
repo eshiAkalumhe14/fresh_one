@@ -273,32 +273,42 @@ function Body() {
 
                     <div className='section3-content'>
                         <div className="section3-card">
+                            <div className='card-title'>
                             <img src={fresh} alt="Fresh" className="section3-icon" />
                             <h3>Taste of Home, Frozen Fresh</h3>
+                            </div>
                             <p>From Point-and-Kill catfish to shawa and smoked turkey, we bring Nigerian flavours straight to your freezer. Frozen at peak freshness to lock in taste and nutrients — enjoy that true homely taste every time.</p>
                         </div>
 
                         <div className="section3-card">
+                            <div className='card-title'>
                             <img src={delivery} alt="Delivery" className="section3-icon" />
                             <h3>Same-Day or Next-Day Delivery</h3>
+                            </div>
                             <p>We deliver across Nigeria — fast and fresh. Choose Same-Day delivery in select cities or reliable Next-Day shipping nationwide. No more market runs; just doorstep convenience.</p>
                         </div>
 
                         <div className="section3-card">
+                            <div className='card-title'>
                             <img src={butcher} alt="Butcher" className="section3-icon" />
                             <h3>Clean, Cut & Ready-to-Cook</h3>
+                            </div>
                             <p>All products are professionally cleaned, cut, and sealed — ready for your pot. Save time and skip the stress. Just thaw, season, and cook your favorite stew, soup, or suya.</p>
                         </div>
 
                         <div className="section3-card">
+                            <div className='card-title'>
                             <img src={map} alt="Map" className="section3-icon" />
                             <h3>Proudly Nigerian & Community-Driven</h3>
+                            </div>
                             <p>We serve Nigerian families, students, caterers, and food vendors with pride. Our platform is made by Nigerians, for Nigerians — focused on quality, culture, and trust.</p>
                         </div>
 
                         <div className="section3-card">
+                            <div className='card-title'>
                             <img src={quality} alt="Quality" className="section3-icon" />
                             <h3>Fair Prices & Bulk Deals</h3>
+                            </div>
                             <p>Get transparent pricing and combo packs that save you more. From small orders to party-sized bulk deliveries — we’ve got your table covered.</p>
                         </div>
                     </div>
