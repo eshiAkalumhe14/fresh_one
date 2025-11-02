@@ -1,14 +1,14 @@
-import logo from './logo.svg';
+import logo from './assets/logo.svg';
 import './App.css';
 import React from 'react';
-import Header from './Header';
-import Body from './Body';
+import Header from './components/Header.js';
+import Home from './pages/Home.js';
 
 function App() {
   return (
     <div className="App">
       <Header />
-      <Body />
+      <Home />
       <button className="order_button">Order Here</button>
     </div>
   );

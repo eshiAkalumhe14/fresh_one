@@ -1,31 +1,31 @@
-import './home.css';
+import '../styles/home.css';
 import React, { useState, useEffect } from 'react';
-import left from './images/left.png';
-import right from './images/right.png';
-import fish from './images/fish.jpeg';
+import left from '../assets/images/left.png';
+import right from '../assets/images/right.png';
+import fish from '../assets/images/fish.jpeg';
 
-import f_icon from './images/fish.png';
-import chicken from './images/chicken.png';
-import turkey from './images/turkey.png';
-import seafood from './images/seafood.png';
-import snails from './images/snail.png';
-import vegetables from './images/frozen-food.png';
-import bulk from './images/bulk.png';
-import combo from './images/combine.png';
+import f_icon from '../assets/images/fish.png';
+import chicken from '../assets/images/chicken.png';
+import turkey from '../assets/images/turkey.png';
+import seafood from '../assets/images/seafood.png';
+import snails from '../assets/images/snail.png';
+import vegetables from '../assets/images/frozen-food.png';
+import bulk from '../assets/images/bulk.png';
+import combo from '../assets/images/combine.png';
 
-import fresh from './images/fresh.png';
-import delivery from './images/express-delivery.png';
-import quality from './images/purchase-order.png';
-import map from './images/map.png';
-import butcher from './images/butcher.png';
+import fresh from '../assets/images/fresh.png';
+import delivery from '../assets/images/express-delivery.png';
+import quality from '../assets/images/purchase-order.png';
+import map from '../assets/images/map.png';
+import butcher from '../assets/images/butcher.png';
 
-import s3img from './images/s3_img.png';
+import s3img from '../assets/images/s3_img.png';
 
 
 
 import Glide from '@glidejs/glide';
 
-function Body() {
+function Home() {
 
     const [currentIndex, setCurrentIndex] = useState(0);
     
@@ -338,4 +338,4 @@ function Body() {
 }
 
 
-export default Body;
+export default Home;

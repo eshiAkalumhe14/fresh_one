@@ -1,14 +1,14 @@
 import React, { useEffect } from 'react';
 import './header.css';
-import logo from './images/logo3.png'
-import search from  './images/search.png';
-import cart from  './images/cart.png';
-import menu from './images/menu.png';
-import home from './images/home.png';
-import about from './images/about.png';
-import shop from './images/shop.png';
-import contact from './images/contact.png';
-import faqs from './images/faqs.png';
+import logo from '../assets/images/logo.png'
+import search from  '../assets/images/search.png';
+import cart from  '../assets/images/cart.png';
+import menu from '../assets/images/menu.png';
+import home from '../assets/images/home.png';
+import about from '../assets/images/about.png';
+import shop from '../assets/images/shop.png';
+import contact from '../assets/images/contact.png';
+import faqs from '../assets/images/faqs.png';
 
 import  {useState} from 'react';
 
