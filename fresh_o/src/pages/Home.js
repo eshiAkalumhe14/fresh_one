@@ -1,7 +1,5 @@
 import '../styles/home.css';
-import React, { useState, useEffect } from 'react';
-import left from '../assets/images/left.png';
-import right from '../assets/images/right.png';
+import React, { useEffect } from 'react';
 import fish from '../assets/images/fish.jpeg';
 
 import f_icon from '../assets/images/fish.png';
@@ -24,7 +22,7 @@ import s3img from '../assets/images/s3_img.png';
 import Glide from '@glidejs/glide';
 
 function Home() {
-  const [currentIndex, setCurrentIndex] = useState(0);
+  // const [currentIndex, setCurrentIndex] = useState(0);
 
   const products = [
     {
@@ -86,8 +84,6 @@ function Home() {
     { id: 9, name: 'Bulk Orders', image: bulk, size: 'small', heat: 0.6 },
   ];
 
-  const colors = ['#1c1c1c', '#2c3e50', '#d01a0d', '#ec9533'];
-
   const getHeatColor = (heat) => {
     if (heat <= 0.5) return '#d01a0d'; // Hot
     if (heat >= 0.7) return '#ec9533'; // Warm
@@ -95,22 +91,22 @@ function Home() {
     return '#1c1c1c'; // Cold
   };
 
-  const handlePrev = () => {
-    setCurrentIndex((prevIndex) => (prevIndex === 0 ? products.length - 1 : prevIndex - 1));
-  };
+  // const handlePrev = () => {
+  //   setCurrentIndex((prevIndex) => (prevIndex === 0 ? products.length - 1 : prevIndex - 1));
+  // };
 
-  const handleNext = () => {
-    setCurrentIndex((prevIndex) => (prevIndex === products.length - 1 ? 0 : prevIndex + 1));
-  };
+  // const handleNext = () => {
+  //   setCurrentIndex((prevIndex) => (prevIndex === products.length - 1 ? 0 : prevIndex + 1));
+  // };
 
-  const getVisibleProducts = () => {
-    const visibleProducts = [];
-    for (let i = 0; i < 4; i++) {
-      const index = (currentIndex + i) % products.length;
-      visibleProducts.push(products[index]);
-    }
-    return visibleProducts;
-  };
+  // const getVisibleProducts = () => {
+  //   const visibleProducts = [];
+  //   for (let i = 0; i < 4; i++) {
+  //     const index = (currentIndex + i) % products.length;
+  //     visibleProducts.push(products[index]);
+  //   }
+  //   return visibleProducts;
+  // };
 
   useEffect(() => {
     const glide = new Glide('.glide', {

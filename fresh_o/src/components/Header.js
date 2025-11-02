@@ -43,7 +43,6 @@ function Header() {
   const handleSearchSubmit = (event) => {
     event.preventDefault();
     // Handle search submission logic here
-    console.log('Search submitted:', searchTerm);
     setSearchTerm('');
     setShowSearchBar(false);
   };
