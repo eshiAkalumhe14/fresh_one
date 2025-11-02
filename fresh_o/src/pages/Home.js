@@ -1,4 +1,4 @@
-import './body.css';
+import './home.css';
 import React, { useState, useEffect } from 'react';
 import left from './images/left.png';
 import right from './images/right.png';
