@@ -91,23 +91,6 @@ function Home() {
     return '#1c1c1c'; // Cold
   };
 
-  // const handlePrev = () => {
-  //   setCurrentIndex((prevIndex) => (prevIndex === 0 ? products.length - 1 : prevIndex - 1));
-  // };
-
-  // const handleNext = () => {
-  //   setCurrentIndex((prevIndex) => (prevIndex === products.length - 1 ? 0 : prevIndex + 1));
-  // };
-
-  // const getVisibleProducts = () => {
-  //   const visibleProducts = [];
-  //   for (let i = 0; i < 4; i++) {
-  //     const index = (currentIndex + i) % products.length;
-  //     visibleProducts.push(products[index]);
-  //   }
-  //   return visibleProducts;
-  // };
-
   useEffect(() => {
     const glide = new Glide('.glide', {
       type: 'carousel',
@@ -323,13 +306,6 @@ function Home() {
             </div>
           </div>
         </div>
-
-        {/* <div>
-                    <h3>Fresh One Frozen Foods</h3>
-                    <p>Always Fresh. Always Reliable. Always Naija.</p>
-                </div> */}
-        <div></div>
-
         <div></div>
       </div>
     </div>
